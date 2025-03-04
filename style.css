@@ -1,0 +1,126 @@
+body {
+    font-family: "Outfit", sans-serif;
+    background: linear-gradient(135deg, #77aeff, #489499);
+    color: #44addd;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;  
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 30px;
+    background: rgb(19, 18, 18);
+    border-radius: 15px;
+    color: #c3cfe2;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    font-size: 1em;
+    min-width: 400px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background: white;
+}
+
+.table thead tr {
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: #ffffff;
+    text-align: left;
+    font-weight: 600;
+}
+
+.table th,
+.table td {
+    padding: 15px 20px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.table tbody tr {
+    transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+    transform: translateX(10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table tbody tr:nth-of-type(even) {
+    background-color: #fafafa;
+}
+
+.table tbody tr:last-of-type {
+    border-bottom: 2px solid #6a11cb;
+}
+
+.table th {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.table td {
+    font-weight: 400;
+}
+
+
+.table tbody tr td {
+    padding: 12px 20px;
+}
+
+/* Styles for Action Buttons */
+.btnUpdateProduct {
+    background-color: #ffc107; /* Bootstrap warning color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btnDeleteProduct {
+    background-color: #dc3545; /* Bootstrap danger color */
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+
+.btnUpdateProduct:hover {
+    background-color: #e0a800; /* Darker shade on hover */
+}
+
+.btnDeleteProduct:hover {
+    background-color: #c82333; /* Darker shade on hover */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.table tbody tr {
+    animation: fadeIn 0.5s ease-in-out;
+    animation-fill-mode: both;
+}
+
+
+.table tbody tr:nth-child(1) { animation-delay: 0.1s; }
+.table tbody tr:nth-child(2) { animation-delay: 0.2s; }
+.table tbody tr:nth-child(3) { animation-delay: 0.3s; }
+.table tbody tr:nth-child(4) { animation-delay: 0.4s; }
+.table tbody tr:nth-child(5) { animation-delay: 0.5s; }
