@@ -13,27 +13,29 @@
 </head>
 <body>
     
-        <h1>Student Information</h1>
+    <h1 class="text-center text-white mb-4" style="padding: 2rem;">Student Information</h1>
         <div>
-            <button type="button" class="btn" style="background-color: #1c64e0; color: #eeeff0; padding: 1rem;" data-bs-toggle="modal" data-bs-target="#createUserModal">Create New</button>
+            <button type="button" class="btn" style="background-color: #1a8ce9; color: #ffffff; padding: 1rem; margin-left: 10rem;" data-bs-toggle="modal" data-bs-target="#createUserModal">Create New</button>
         </div>
-        <table class="table table-success table-hover table-striped ">   
-            <thead>
-                <tr>
-                    <th scope="col">Student ID</th>
-                    <th scope="col">First Name</th>
-                    <th scope="col">Last Name</th>
-                    <th scope="col">Email</th>
-                    <th scope="col">Gender</th>
-                    <th scope="col">Course</th>
-                    <th scope="col">User Address</th>
-                    <th scope="col">Age</th>
-                    <th scope="col">Action</th>
-                </tr>
-            </thead>
-            <tbody id="tableBody">
-            </tbody>
-        </table>
+        <div class="container mb-4" style="padding-left: 1rem; padding-right: 1rem;">
+            <table class="table table-success table-hover table-striped">   
+                <thead>
+                    <tr>
+                        <th scope="col">Student ID</th>
+                        <th scope="col">First Name</th>
+                        <th scope="col">Last Name</th>
+                        <th scope="col">Email</th>
+                        <th scope="col">Gender</th>
+                        <th scope="col">Course</th>
+                        <th scope="col">User Address</th>
+                        <th scope="col">Age</th>
+                        <th scope="col">Action</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                </tbody>
+            </table>
+        </div>
  
 
     <div class="modal fade" id="createUserModal" tabindex="-1" aria-labelledby="createUserModalLabel" aria-hidden="true">
